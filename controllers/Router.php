@@ -10,7 +10,7 @@ class Router
         {
             // CHARGEMENT AUTOMATIQUE DES CLASSES
             spl_autoload_register(function($class){
-                require_once($_SERVER["DOCUMENT_ROOT"]."/models/".$class.'.php');
+                require_once('models/'.$class.'.php');
             });
 
             $url = '';
